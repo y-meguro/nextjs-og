@@ -45,14 +45,8 @@ export default function ArticlePage({
   }, [meta, currentArticle?.body]);
 
   const ogImage = useMemo(() => {
-    if (meta?.ogImage) {
-      return meta.ogImage.src;
-    }
-    if (currentArticle?.author?.profileImage) {
-      return currentArticle.author.profileImage.src;
-    }
-    return "";
-  }, [meta?.ogImage, currentArticle?.author]);
+    return `https://nextjs-og-seven.vercel.app/api/og?title=${currentArticle.title}`;
+  }, [currentArticle.title]);
 
   const authorName = useMemo(() => {
     return currentArticle?.author?.fullName || "NO NAME";
