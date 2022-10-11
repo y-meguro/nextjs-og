@@ -19,7 +19,7 @@ export default function handler(req: NextRequest) {
       (
         <div
           style={{
-            backgroundImage: "url(http://localhost:3000/bg.png)",
+            backgroundImage: "url(https://nextjs-og-seven.vercel.app/bg.png)",
             backgroundColor: "#fff",
             backgroundSize: "100% 100%",
             height: "100%",
