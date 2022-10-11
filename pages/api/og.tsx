@@ -19,13 +19,14 @@ export default function handler(req: NextRequest) {
       (
         <div
           style={{
-            backgroundColor: "black",
-            backgroundSize: "150px 150px",
+            backgroundImage: "url(http://localhost:3000/bg.png)",
+            backgroundColor: "#fff",
+            backgroundSize: "100% 100%",
             height: "100%",
             width: "100%",
             display: "flex",
-            textAlign: "center",
-            alignItems: "center",
+            textAlign: "left",
+            alignItems: "flex-start",
             justifyContent: "center",
             flexDirection: "column",
             flexWrap: "nowrap",
@@ -33,33 +34,31 @@ export default function handler(req: NextRequest) {
         >
           <div
             style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              justifyItems: "center",
-            }}
-          >
-            <img
-              alt="Vercel"
-              height={200}
-              src="data:image/svg+xml,%3Csvg width='116' height='100' fill='white' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M57.5 0L115 100H0L57.5 0z' /%3E%3C/svg%3E"
-              style={{ margin: "0 30px" }}
-              width={232}
-            />
-          </div>
-          <div
-            style={{
+              width: "100%",
               fontSize: 60,
               fontStyle: "normal",
-              letterSpacing: "-0.025em",
-              color: "white",
-              marginTop: 30,
+              fontWeight: "bold",
+              color: "#000",
               padding: "0 120px",
-              lineHeight: 1.4,
-              whiteSpace: "pre-wrap",
+              lineHeight: 1.3,
+              marginBottom: "30px",
+              wordWrap: "break-word",
             }}
           >
             {title}
+          </div>
+          <div
+            style={{
+              width: "100%",
+              fontSize: 40,
+              fontStyle: "normal",
+              fontWeight: "bold",
+              color: "#000",
+              padding: "0 120px",
+              lineHeight: 1.3,
+            }}
+          >
+            ✏️ OG Image Examples
           </div>
         </div>
       ),
